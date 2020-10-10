@@ -6,7 +6,7 @@ This demo is for Angular study group session 2 - Component
 
 Clone this repo
 ```
-
+git clone https://github.com/hongtat88/angular-study-group-component.git
 ```
 
 Install dependancies
