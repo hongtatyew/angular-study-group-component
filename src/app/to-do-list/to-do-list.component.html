@@ -1,0 +1,11 @@
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Add a todo item" aria-label="Add a todo item"
+        [(ngModel)]="task">
+    <div class="input-group-append">
+        <button class="btn btn-primary has-error" type="button" (click)="addTodoItem()">Add</button>
+    </div>
+</div>
+
+<ul class="list-group">
+    <app-to-do-item *ngFor="let todoItem of todoList" [todoItem]="todoItem" (todoItemChanged)="todoItemChanged($event)" (todoItemDeleted)="todoItemDeleted($event)"></app-to-do-item>
+</ul>
